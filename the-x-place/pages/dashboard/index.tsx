@@ -75,8 +75,8 @@ const Dashboard: NextPage = () => {
           placeholder="Madero Harbor"
         />
       </div>
-      {loading ? (
-        "Loading..."
+      {!loading ? (
+        <div className="w-full px-4 sm:px-6 lg:px- mt-6">Loading...</div>
       ) : (
         <Table
           rentals={visibleRentals}
